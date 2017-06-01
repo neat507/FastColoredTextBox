@@ -73,6 +73,7 @@
       <DependentUpon>HotkeysEditorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LinesAccessor.cs" />
+    <Compile Include="Locale.cs" />
     <Compile Include="MacrosManager.cs" />
     <Compile Include="PlatformType.cs" />
     <Compile Include="Hotkeys.cs" />

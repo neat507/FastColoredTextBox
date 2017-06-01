@@ -131,16 +131,19 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+            Locale locale = new Locale();
+            locale.translate(this);
+
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btClose;
-        private System.Windows.Forms.Button btFindNext;
-        private System.Windows.Forms.CheckBox cbRegex;
-        private System.Windows.Forms.CheckBox cbMatchCase;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox cbWholeWord;
+        public System.Windows.Forms.Button btClose;
+        public System.Windows.Forms.Button btFindNext;
+        public System.Windows.Forms.CheckBox cbRegex;
+        public System.Windows.Forms.CheckBox cbMatchCase;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.CheckBox cbWholeWord;
         public System.Windows.Forms.TextBox tbFind;
     }
 }

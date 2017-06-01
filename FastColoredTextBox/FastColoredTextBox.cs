@@ -1302,10 +1302,10 @@ namespace FastColoredTextBoxNS
 
 
         [Browsable(false)]
-        public FindForm findForm { get; private set; }
+        public FindForm findForm { get; protected set; }
 
         [Browsable(false)]
-        public ReplaceForm replaceForm { get; private set; }
+        public ReplaceForm replaceForm { get; protected set; }
 
         /// <summary>
         /// Do not change this property
@@ -2396,7 +2396,7 @@ namespace FastColoredTextBoxNS
                 findForm.tbFind.Text = Selection.Text;
 
             findForm.tbFind.SelectAll();
-            findForm.Show();
+            findForm.Show(this);
             findForm.Focus();
         }
 
