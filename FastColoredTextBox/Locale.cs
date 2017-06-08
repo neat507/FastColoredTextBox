@@ -41,7 +41,7 @@ namespace FastColoredTextBoxNS
                         cc.Text = "다음 찾기";
                         //Point p = new Point(205, 67);
                         var p = cc.Location;
-                        var t = new Point(-30, -6);
+                        var t = new Point(-50, -6);
                         p.X += t.X; p.Y += t.Y;
                         cc.Location = p;
                         
@@ -53,7 +53,7 @@ namespace FastColoredTextBoxNS
                         cc.Scale(sizef);
                         cc.Text = "닫기";
                         var p = cc.Location;
-                        var t = new Point(-32, -6);
+                        var t = new Point(-52, -6);
                         p.X += t.X; p.Y += t.Y;
                         cc.Location = p;
                     }
