@@ -133,7 +133,7 @@
 
             Locale locale = new Locale();
             locale.translate(this);
-
+            
         }
 
         #endregion

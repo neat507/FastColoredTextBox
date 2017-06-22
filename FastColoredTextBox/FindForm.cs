@@ -51,9 +51,16 @@ namespace FastColoredTextBoxNS
                     range.End = new Place(tb.GetLineLength(tb.LinesCount - 1), tb.LinesCount - 1);
                 else
                     range.End = startPlace;
+                
                 //
                 foreach (var r in range.GetRangesByLines(pattern, opt))
                 {
+                    if (r.Start == r.End)
+                    {
+                        MessageBox.Show("찾는 문자열이 빈 문자열입니다.");
+                        return;
+                    }
+
                     tb.Selection = r;
                     tb.DoSelectionVisible();
                     tb.Invalidate();
